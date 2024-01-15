@@ -11,6 +11,7 @@
 #include <fcntl.h>
 #include <signal.h>
 #include <limits.h>
+#include <stdbool.h>
 
 #define BUFSIZE 1024
 #define TOK_BUFSIZE 128
@@ -128,7 +129,7 @@ void rev_string(char *s);
 int repeated_char(char *input, int i);
 int error_sep_op(char *input, int i, char last);
 int first_char(char *input, int *i);
-void print_syntax_error(data_shell *datash, char *input, int i, int bool);
+void print_syntax_error(data_shell *datash, char *input, int i, int Bool);
 int check_syntax_error(data_shell *datash, char *input);
 
 /* shell_loop.c */
@@ -139,7 +140,7 @@ void shell_loop(data_shell *datash);
 char *read_line(int *i_eof);
 
 /* split.c */
-char *swap_char(char *input, int bool);
+char *swap_char(char *input, int Bool);
 void add_nodes(sep_list **head_s, line_list **head_l, char *input);
 void go_next(sep_list **list_s, line_list **list_l, data_shell *datash);
 int split_commands(data_shell *datash, char *input);
