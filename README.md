@@ -37,7 +37,7 @@ The project is organized into several C files, each contributing to specific asp
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/bwambale03/simple-shell.git
+   git clone https://github.com/bwambale03/simple_shell.git
 2. 1. **Navigate to the project directory**
 
     ```bash
