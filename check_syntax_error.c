@@ -98,17 +98,17 @@ int first_char(char *input, int *i)
  * @datash: data structure
  * @input: input string
  * @i: index of the error
- * @bool: to control msg error
+ * @Bool: to control msg error
  * Return: no return
  */
-void print_syntax_error(data_shell *datash, char *input, int i, int bool)
+void print_syntax_error(data_shell *datash, char *input, int i, int Bool)
 {
 	char *msg, *msg2, *msg3, *error, *counter;
 	int length;
 
 	if (input[i] == ';')
 	{
-		if (bool == 0)
+		if (Bool == 0)
 			msg = (input[i + 1] == ';' ? ";;" : ";");
 		else
 			msg = (input[i - 1] == ';' ? ";;" : ";");

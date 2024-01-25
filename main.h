@@ -227,6 +227,9 @@ void aux_help_exit(void);
 void aux_help(void);
 void aux_help_alias(void);
 void aux_help_cd(void);
+/*man.c function prototypes*/
+void showManPage(char *command);
+int handleManPageRequest(int argc, char *argv[]);
 
 /* get_help.c */
 int get_help(data_shell *datash);

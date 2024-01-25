@@ -1,3 +1,4 @@
+#include <stdbool.h>
 #include "main.h"
 
 /**
@@ -71,7 +72,7 @@ char *_strtok(char str[], const char *delim)
 {
 		static char *splitted, *str_end;
 			char *str_start;
-				unsigned int i, bool;
+				unsigned int i, Bool;
 
 					if (str != NULL)
 							{
@@ -85,7 +86,7 @@ char *_strtok(char str[], const char *delim)
 							if (str_start == str_end) /*Reaching the end*/
 										return (NULL);
 
-								for (bool = 0; *splitted; splitted++)
+								for (Bool = 0; *splitted; splitted++)
 										{
 													/*Breaking loop finding the next token*/
 													if (splitted != str_start)
@@ -102,10 +103,10 @@ char *_strtok(char str[], const char *delim)
 																																							break;
 																																										}
 																								}
-																	if (bool == 0 && *splitted) /*Str != Delim*/
-																					bool = 1;
+																	if (Bool == 0 && *splitted) /*Str != Delim*/
+																					Bool = 1;
 																		}
-									if (bool == 0) /*Str == Delim*/
+									if (Bool == 0) /*Str == Delim*/
 												return (NULL);
 										return (str_start);
 }

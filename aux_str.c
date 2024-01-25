@@ -86,20 +86,20 @@ char *_strchr(char *s, char c)
  *      */
 int _strspn(char *s, char *accept)
 {
-		int i, j, bool;
+		int i, j, Bool;
 
 			for (i = 0; *(s + i) != '\0'; i++)
 					{
-								bool = 1;
+								Bool = 1;
 										for (j = 0; *(accept + j) != '\0'; j++)
 													{
 																	if (*(s + i) == *(accept + j))
 																					{
-																										bool = 0;
+																										Bool = 0;
 																														break;
 																																	}
 																			}
-												if (bool == 1)
+												if (Bool == 1)
 																break;
 													}
 				return (i);
